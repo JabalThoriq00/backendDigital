@@ -1,0 +1,26 @@
+{
+  "name": "toko-digital",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "next": "15.3.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swagger-ui-react": "^5.22.0",
+    "toko-digital": "file:"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "tailwindcss": "^4"
+  }
+}
