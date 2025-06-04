@@ -2,7 +2,7 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
-// SwaggerUI hanya bisa dijalankan di client-side
+// Hanya load di client‐side
 const SwaggerUI = dynamic(
   () => import('swagger-ui-react').then((mod) => mod.default),
   { ssr: false }
@@ -18,6 +18,7 @@ export default function ApiDocs() {
         />
         <title>Dokumentasi API</title>
       </Head>
+      {/* SwaggerUI akan melakukan fetch ke /openapi.json */}
       <SwaggerUI url="/openapi.json" />
     </>
   );
